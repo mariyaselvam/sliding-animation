@@ -1,0 +1,113 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(217, 217, 217);
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+body ,.container, .container-child-1 ,.container-child-2, .container-child-3{
+    display: flex;
+    align-items: center;
+
+}
+ 
+.container{
+    height: 65%;
+    width: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: white;
+    background-image:
+    linear-gradient(#e98913 0 0),
+    linear-gradient(#e98913 0 0); 
+    background-repeat: no-repeat;
+     background-size: 100% 0%;
+    background-position: 200px 200px,200px 200px; 
+}
+
+.container:hover{
+  background-size: 100% 100%;
+  background-position:
+    50% 50%,
+   50% 50%;  
+  transition: background-size 0.3s 0.3s, background-position .3s;
+}
+
+.container-child-1{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    height: 30%;
+    width: 100%;
+    justify-content: start;
+    padding-left: 10%;
+}
+.container-child-2{
+    height: 45%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
+    padding: 10px 30px;
+
+}
+
+.container-child-3{
+    justify-content: space-between;
+    height: 25%;
+    width: 80%;
+    border-top:1px solid black ;
+}
+img{
+    display: inline-block;
+    width: 50px;
+}
+button{
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    border-style: none;
+}
+
+
+/* hover animation */
+span{
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+/* responsive desin  */
+
+@media (max-width:600px) {
+    .container{
+        height: 65%;
+        width: 260px;
+    }
+    button{
+        width: 100px;
+        height: 35px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    
+    .container-child-2{
+        font-size: 16px;
+        line-height: 30px;
+        padding: 10px 30px;
+    
+    }
+    img{
+        display: inline-block;
+        width: 40px;
+    }
+    h1{
+        font-size: 26px;
+        margin: 0%;
+        padding: 0%;
+    }
+}
